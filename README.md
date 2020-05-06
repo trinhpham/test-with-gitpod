@@ -3,5 +3,5 @@
 # Simple Web Browser test with Gitpod
 
 - Press icon above to start your session
-- When asked, make the port `6080` public for noVNC access, press "Open Browser" and enter `secret` as the VNC password
+- When asked, allow the noVNC popup be opened and enter `secret` as the VNC password. (If you miss this step, see the port 6080 at bottom, click on it then click on `Open Browser` on the opened panel)
 - Run your test with `npm run test` and see how it run on the VNC page
