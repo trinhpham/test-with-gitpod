@@ -6,6 +6,10 @@ tasks:
 image:
   file: .gitpod.Dockerfile
 
+ports:
+  - port: 6080
+    onOpen: open-browser
+
 vscode:
   extensions:
     - LogiGear.gondola-studio@1.5.519:g7UcBWe40SBZqF/ACzFihA==
