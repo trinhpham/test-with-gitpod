@@ -2,6 +2,9 @@ FROM selenium/standalone-chrome-debug
 
 USER root
 
+# Prepare env
+RUN apt update && apt-get install -y git && apt clean all
+
 # Install novnc
 RUN git clone https://github.com/novnc/noVNC.git /opt/novnc \
     && git clone https://github.com/novnc/websockify /opt/novnc/utils/websockify
