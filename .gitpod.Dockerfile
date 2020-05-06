@@ -1,6 +1,11 @@
 FROM selenium/standalone-chrome-debug
-                    
-USER seluser
+
+USER root
+
+# Install novnc
+RUN git clone https://github.com/novnc/noVNC.git /opt/novnc \
+    && git clone https://github.com/novnc/websockify /opt/novnc/utils/websockify
+COPY novnc-index.html /opt/novnc/index.html
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
