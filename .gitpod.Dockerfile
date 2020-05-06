@@ -3,7 +3,10 @@ FROM selenium/standalone-chrome-debug
 USER root
 
 # Prepare env
-RUN apt update && apt-get upgrade -y && apt-get install -y git nodejs npm && apt clean all
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - 
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+RUN apt update && apt-get upgrade -y && apt-get install -y git nodejs yarn && apt clean all
 
 # Install novnc
 RUN git clone https://github.com/novnc/noVNC.git /opt/novnc \
