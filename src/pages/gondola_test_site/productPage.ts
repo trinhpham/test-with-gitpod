@@ -1,0 +1,40 @@
+import { gondola, locator, page, action } from "gondolajs";
+
+@page
+export class ProductPage {
+    @locator public elmItems = `//div[@class='item']`;
+    @locator public btnAddItemToCard = `//div[@class='item' and ./p[text()='%s']]/button`;
+    @locator public lblPageTitle = `//main[@class='capsule']//h1`;
+    @locator public lnkTopMenuWomen = `//div[@class='navarea']//ul/a[.="Women's"]`;
+    @locator public lnkTopMenuSale = `//div[@class='navarea']//ul/a[.="Sale"]`;
+    @locator public lnkTopMenuShoppingCart = `//div[@class='navarea']//a[@href='/cart']`;
+
+    @action("add item to cart", "Add product to cart")
+    public async addToCart(productName: string) {
+        let realLocator = this.btnAddItemToCard.replace('%s', productName);
+        await gondola.waitForElement(realLocator);
+        await gondola.click(realLocator);
+    }
+
+    @action("check page title displayed", "Check 'Sale' page title is displayed")
+    public async checkSalePageTitleDisplayed() {
+        await gondola.checkControlExist(this.lblPageTitle);
+        await gondola.checkControlProperty(this.lblPageTitle, "innerText", "Sale");
+    }
+
+    @action("check all sale labels exist", "Check 'Sale' label displayed in all products")
+    public async checkAllSaleLabelsDisplayed() {
+        let count = await gondola.getElementCount(this.elmItems);
+        while (--count > 0) {
+            await gondola.checkControlExist(`${this.elmItems}[${count}]//span[text()='Sale']`);
+        }
+    }
+
+    @action("open shopping cart", "Open shopping cart by clicking on cart menu on the top")
+    public async openShoppingCart() {
+        await gondola.waitForElement(this.lnkTopMenuShoppingCart);
+        await gondola.click(this.lnkTopMenuShoppingCart);
+    }
+}
+
+export default new ProductPage();
