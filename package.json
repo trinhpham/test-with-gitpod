@@ -1,26 +1,27 @@
 {
-    "name": "untitled-project-10",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "clean": "rimraf built",
-        "clean-dev": "./node_modules/.bin/tsc -b --clean --dev",
-        "compile": "npm run clean && tsc",
-        "parallel": "./node_modules/.bin/gondola run-multiple parallel --reporter mochawesome",
-        "test": "./node_modules/.bin/gondola run --steps --reporter mochawesome"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "gondolajs": "./lib/gondolajs-1.5.252.tgz",
-        "mochawesome": "^4.1.0",
-        "webdriverio": "^5.18.4",
-        "rimraf": "3.0.2"
-    },
-    "devDependencies": {
-        "@wdio/selenium-standalone-service": "^5.0.0",
-        "@types/node": "^12.12.15",
-        "typescript": "^3.7.3"
-    }
+  "name": "untitled-project-10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf built",
+    "clean-dev": "./node_modules/.bin/tsc -b --clean --dev",
+    "compile": "npm run clean && tsc",
+    "parallel": "./node_modules/.bin/gondola run-multiple parallel --reporter mochawesome",
+    "test": "./node_modules/.bin/gondola run --steps --reporter mochawesome"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gondolajs": "./lib/gondolajs-1.5.252.tgz",
+    "mochawesome": "^4.1.0",
+    "webdriverio": "^5.18.4",
+    "rimraf": "3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.15",
+    "@wdio/cli": "^6.1.8",
+    "@wdio/selenium-standalone-service": "^5.0.0",
+    "typescript": "^3.7.3"
+  }
 }
