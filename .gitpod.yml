@@ -9,11 +9,7 @@ image:
 ports:
   - port: 6080
     onOpen: open-browser
-  - port: 4444
-    onOpen: ignore
-  - port: 5900
-    onOpen: ignore
-  - port: 8080
+  - port: 1000-65535
     onOpen: ignore
 
 vscode:
