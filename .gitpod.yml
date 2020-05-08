@@ -1,5 +1,5 @@
 tasks:
-  - command: /opt/bin/entry_point.sh & /opt/novnc/utils/launch.sh --vnc "localhost:5900" --listen "6080" & npm i && ln -s /usr/bin/chromedriver /workspace/test-with-gitpod/node_modules/selenium-standalone/.selenium/chromedriver/81.0.4044.69-x64-chromedriver && npm run compile -- -w & echo -e "You are ready! \nRun your test by 'npm run test'"
+  - command: /opt/bin/entry_point.sh & /opt/novnc/utils/launch.sh --vnc "localhost:5900" --listen "6080" & npm i && mkdir -p /workspace/test-with-gitpod/node_modules/selenium-standalone/.selenium/chromedriver/ && ln -s /usr/bin/chromedriver /workspace/test-with-gitpod/node_modules/selenium-standalone/.selenium/chromedriver/81.0.4044.69-x64-chromedriver && npm run compile -- -w & echo -e "You are ready! \nRun your test by 'npm run test'"
   
 image:
   file: .gitpod.Dockerfile
