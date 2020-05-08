@@ -21,7 +21,6 @@
   "devDependencies": {
     "@types/node": "^12.12.15",
     "@wdio/cli": "^6.1.8",
-    "@wdio/selenium-standalone-service": "^5.0.0",
     "typescript": "^3.7.3"
   }
 }

@@ -31,20 +31,6 @@
     "plugins": {
         "screenshotOnFail": {
             "enabled": true
-        },
-        "wdio": {
-            "services": [
-                "selenium-standalone"
-            ],
-            "enabled": true,
-            "skipSeleniumInstall": true,
-            "seleniumArgs": {
-                "drivers": {
-                    "chrome": {
-                        "version": "81.0.4044.69"
-                    }
-                }
-            }
         }
     },
     "mocha": {
