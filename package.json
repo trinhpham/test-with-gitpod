@@ -13,10 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gondolajs": "./lib/gondolajs-1.5.252.tgz",
+    "gondolajs": "file:lib/gondolajs-1.6.30.tgz",
     "mochawesome": "^4.1.0",
-    "webdriverio": "^5.18.4",
-    "rimraf": "3.0.2"
+    "rimraf": "3.0.2",
+    "webdriverio": "^5.18.4"
   },
   "devDependencies": {
     "@types/node": "^12.12.15",
