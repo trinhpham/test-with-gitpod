@@ -1,6 +1,6 @@
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trinhpham/test-with-gitpod) 
 
-# Simple Web Browser test with Gitpod
+# TestArchitect Gondola Workshop
 
 ## Getting Started
 - Click on the Gitpod icon above to start your session. Follow the instructions on-screen for installation.
