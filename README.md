@@ -3,7 +3,11 @@
 # TestArchitect Gondola Workshop
 
 ## Getting Started
-- Click on the Gitpod icon above to start your session. Follow the instructions on-screen for installation.
+- Create TA Gondola account: https://sso.logigear.com/register/?host_url=https://gondolatest.com/en/thankyou/&_ga=2.28415100.1139009272.1605894476-1871157089.1576096278
+- Create Github account: https://github.com/
+## Launching Gondola
+- Go to https://gitpod.io/#https://github.com/trinhpham/test-with-gitpod and click on 'Login with GitHub & Launch Workspace"
+- Use your GitHub account to login and wait for Gitpod to get Gondola ready. It's ready when you see VS Code loaded.
 - When asked, allow the noVNC popup be opened and enter `secret` as the VNC password. (If you miss this step, see the port 6080 at bottom, click on it then click on `Open Browser` on the opened panel). Highly recommend opening the VNC page in browser.
 - [Enable beta feataures](https://docs.gondolatest.com/guides/beta-features.html#enabling-beta-features) (Note: this step is going to be eliminated)
 ## Run Test
