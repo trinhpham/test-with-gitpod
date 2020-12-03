@@ -15,13 +15,9 @@
 - Open package.json, then add --licenseToken for "test" script. Example: "test": "./node_modules/.bin/gondola run --steps --reporter mochawesome --licenseToken ABCDEFDSFASDFASDFASDFASD"
 - Run your test with `npm run test` and see how it runs on the VNC page.
 ## Record A Test
-...
+https://docs.gondolatest.com/testbuilder-guide/using-web-testbuilder.html#using-web-testbuilder
 ## Execute Test
 - Execute
 - Watch test execution through VNC connection
-## Execute Test on BrowserStack
-Note: BrowserStack accepts emails like gmail
-- Setup
-- Parallel test execution on Windows & Mac
-- Parallel test execution on Android devices
+
 
