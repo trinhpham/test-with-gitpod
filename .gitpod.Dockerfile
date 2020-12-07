@@ -13,9 +13,6 @@ RUN git clone https://github.com/novnc/noVNC.git /opt/novnc \
     && git clone https://github.com/novnc/websockify /opt/novnc/utils/websockify
 COPY novnc-index.html /opt/novnc/index.html
 
-# Set background image
-RUN wget https://gondolatest.com/wp-content/uploads/2019/02/gondola-logo-1.png && feh --bg-center gondola-logo-1.png
-
 # Sample token
 ENV G_LS_TOKEN=63F3AD4E1DD2268360BCBD700CA0E6CD9E12F4429B6D1E79C4C3FD55FF721C78
 ENV BROWSER=google-chrome
