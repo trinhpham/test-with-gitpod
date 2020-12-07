@@ -8,7 +8,6 @@ image:
 ports:
   - port: 6080
     onOpen: open-preview
-
 vscode:
   extensions:
-    - LogiGear.gondola-studio@1.6.153:t/ZCYrWASrUbYRH/pKXG/g==
+    - LogiGear.gondola-studio-lite@2.0.9:8KRz1rz/+q+qzfPlrijo0w==
