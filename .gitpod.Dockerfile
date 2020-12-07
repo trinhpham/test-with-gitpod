@@ -11,11 +11,14 @@ RUN apt update && apt-get upgrade -y && apt-get install -y git nodejs yarn iputi
 # Install novnc
 RUN git clone https://github.com/novnc/noVNC.git /opt/novnc \
     && git clone https://github.com/novnc/websockify /opt/novnc/utils/websockify
-COPY novnc-index.html /opt/novnc/index.html
+COPY .gitpod-config/novnc-index.html /opt/novnc/index.html
 
 # Sample token
 ENV G_LS_TOKEN=63F3AD4E1DD2268360BCBD700CA0E6CD9E12F4429B6D1E79C4C3FD55FF721C78
 ENV BROWSER=google-chrome
+
+COPY .gitpod-config/novnc.conf /etc/supervisor/conf.d/novnc.conf
+
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
 #
