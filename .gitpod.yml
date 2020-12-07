@@ -10,4 +10,4 @@ ports:
     onOpen: open-preview
 vscode:
   extensions:
-    - LogiGear.gondola-studio-lite@2.0.9:8KRz1rz/+q+qzfPlrijo0w==
+    - LogiGear.gondola-studio-lite@2.0.10:ynww31FfSWM1lI3Vs0DVHQ==

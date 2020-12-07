@@ -1,4 +1,4 @@
-import { gondola, locator, page, action } from "gondolajs";
+import { gondola, locator, page, action } from "@logigear/gondola";
 
 @page
 export class HomePage {

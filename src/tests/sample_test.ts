@@ -1,4 +1,4 @@
-import { TestCase, TestModule, gondola } from "gondolajs";
+import { TestCase, TestModule, gondola } from "@logigear/gondola";
 import HomePage from "../pages/gondola_test_site/homePage";
 import ProductPage from "../pages/gondola_test_site/productPage";
 import CartPage from "../pages/gondola_test_site/cartPage";
