@@ -1,4 +1,4 @@
-import { gondola, locator, page, action } from "gondolajs";
+import { gondola, locator, page, action } from "@logigear/gondola";
 import { Payment } from "../../data/payment";
 
 @page

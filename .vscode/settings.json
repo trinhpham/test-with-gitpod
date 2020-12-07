@@ -1,3 +1,13 @@
 {
-    "gondola.tryBeta": true 
+    "gondola.tryBeta": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        ".git": true,
+        ".gitpod-config": true,
+        ".vscode": true,
+        ".git*": true
+    }
 }

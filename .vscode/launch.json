@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Run all tests",
-            "program": "${workspaceFolder}/node_modules/gondolajs/bin/gondola.js",
+            "program": "${workspaceFolder}/node_modules/@logigear/gondola/bin/gondola.js",
             "args": [
                 "run",
                 "--steps",
