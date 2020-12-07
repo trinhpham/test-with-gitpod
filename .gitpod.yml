@@ -2,7 +2,7 @@ tasks:
   - command: /opt/bin/entry_point.sh &
   - command: npm i && npm run compile -- -w & echo -e "\n\nYou are ready! \nRun your test by 'npm run test'\n"
 image:
-  file: .gitpod.Dockerfile
+  file: .gitpod-config/.gitpod.Dockerfile
 
 ports:
   - port: 6080
