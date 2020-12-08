@@ -10,18 +10,14 @@
             "keepBrowserState": false,
             "keepCookies": false,
             "waitForTimeout": 10000,
-            "smartWait": 5000,
             "timeouts": {
                 "script": 60000,
                 "pageLoad": 10000
             },
             "desiredCapabilities": {
-                "chromeOptions": {
-                    "args": [
-                        "--disable-gpu",
-                        "--no-sandbox"
-                    ]
-                }
+              "chromeOptions": {
+                "args": [ "--disable-gpu", "--no-sandbox"]
+              }
             }
         },
         "Mochawesome": {}
@@ -31,6 +27,12 @@
     "plugins": {
         "screenshotOnFail": {
             "enabled": true
+        },
+        "wdio": {
+            "services": [
+                "selenium-standalone"
+            ],
+            "enabled": false
         }
     },
     "mocha": {

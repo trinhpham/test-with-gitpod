@@ -1,26 +1,25 @@
 {
-  "name": "untitled-project-10",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "clean": "rimraf built",
-    "clean-dev": "./node_modules/.bin/tsc -b --clean --dev",
-    "compile": "npm run clean && tsc",
-    "parallel": "./node_modules/.bin/gondola run-multiple parallel --reporter mochawesome",
-    "test": "./node_modules/.bin/gondola run --steps --reporter mochawesome"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@logigear/gondola": "^1.7.2151",
-    "mochawesome": "^4.1.0",
-    "rimraf": "3.0.2",
-    "webdriverio": "^5.18.4"
-  },
-  "devDependencies": {
-    "@types/node": "^12.12.15",
-    "@wdio/cli": "^6.1.8",
-    "typescript": "^3.7.3"
-  }
+    "name": "sample-gitpod-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clean": "rimraf built",
+        "compile": "npm run clean && tsc",
+        "parallel": "./node_modules/.bin/gondola run-multiple parallel --reporter mochawesome",
+        "test": "./node_modules/.bin/gondola run --steps --reporter mochawesome"
+    },
+    "author": "",
+    "license": "ISC",
+    "engines": {
+        "node": ">=10.19.0"
+    },
+    "dependencies": {
+        "@logigear/gondola": "latest",
+        "mochawesome": "6.2.1",
+        "rimraf": "3.0.2"
+    },
+    "devDependencies": {
+        "@wdio/selenium-standalone-service": "6.10.3"
+    }
 }
