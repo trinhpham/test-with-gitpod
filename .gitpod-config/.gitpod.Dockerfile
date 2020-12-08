@@ -61,4 +61,4 @@ USER 1200
 COPY .gitpod-config/generate_config /opt/bin/generate_config
 
 # Generating a default config during build time
-RUN chmod +x /opt/bin/generate_config && /opt/bin/generate_config > /opt/selenium/config.json
+RUN /opt/bin/generate_config > /opt/selenium/config.json
