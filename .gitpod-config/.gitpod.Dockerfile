@@ -62,3 +62,6 @@ COPY .gitpod-config/generate_config /opt/bin/generate_config
 
 # Generating a default config during build time
 RUN /opt/bin/generate_config > /opt/selenium/config.json
+RUN sudo chmod -R 777 ${HOME} \
+  && sudo chgrp -R 0 ${HOME} \
+  && sudo chmod -R g=u ${HOME}
