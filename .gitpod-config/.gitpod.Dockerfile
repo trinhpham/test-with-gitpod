@@ -64,4 +64,7 @@ COPY .gitpod-config/generate_config /opt/bin/generate_config
 RUN /opt/bin/generate_config > /opt/selenium/config.json
 RUN sudo chmod -R 777 ${HOME} \
   && sudo chgrp -R 0 ${HOME} \
-  && sudo chmod -R g=u ${HOME}
+  && sudo chmod -R g=u ${HOME} \
+  && sudo xdg-mime default google-chrome.desktop x-scheme-handler/http \
+  && sudo xdg-mime default google-chrome.desktop x-scheme-handler/https \
+  && sudo xdg-mime default google-chrome.desktop text/html
