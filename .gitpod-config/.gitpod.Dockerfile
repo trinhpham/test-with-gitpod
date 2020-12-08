@@ -58,7 +58,7 @@ COPY .gitpod-config/novnc.conf /etc/supervisor/conf.d/novnc.conf
 
 USER 1200
 
-COPY generate_config /opt/bin/generate_config
+COPY .gitpod-config/generate_config /opt/bin/generate_config
 
 # Generating a default config during build time
-RUN /opt/bin/generate_config > /opt/selenium/config.json
+RUN chmod +x /opt/bin/generate_config && /opt/bin/generate_config > /opt/selenium/config.json
