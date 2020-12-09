@@ -23,8 +23,8 @@
                     "browserstack.appium_version" : "1.18.3",
                     "browserstack.local" : "false",
                     "browserstack.debug" : "true",
-                    "browserstack.user" : "nguyendinhthinh1",
-                    "browserstack.key" : "EmVDLbmyrqgcWMqfwjjX",
+                    "browserstack.user" : "tiennguyen40",
+                    "browserstack.key" : "n6NUXpsv4TTyyg9fkfZR",
                     "os" : "android",
                     "browser": "Android",
                     "platform" : "ANDROID",
@@ -41,12 +41,6 @@
     "bootstrap": false,
     "plugins": {
         "screenshotOnFail": {
-            "enabled": true
-        },
-        "wdio": {
-            "services": [
-                "selenium-standalone"
-            ],
             "enabled": true
         }
     },
